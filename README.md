@@ -1,20 +1,15 @@
 # Saturn-Aurora
 
-Step 1: Install libraries
-To get started from scratch, use `npm i -D @0xsaturn/sdk ethers`
-To use our boilerplate repo, use `npm i -D`
+### Install libraries
 
-Step 2: Setting up the private key
+Clone this repo, and use `yarn` to install dependencies.
 
-Create a  `.env` file in the folder that you are currently working to safely store sensitive data.
+### Setup the environmental variables
 
-Insert the following line:
-`PRIVATE_KEY = “<Private key of developer’s wallet here>”`
+Make a `.env` file with `PRIVATE_KEY="<PRIVATE_KEY_OF_WALLET>"`
 
-Step 3: Using the SDK
+### Run the files.
 
-main.ts deploys the registry module (This module enables you to easily keep track of all contracts you’ve deployed or are using).
-erc20.ts deploys an erc20 token
-contract.ts allows you to add a contract to the registry 
+Deploy the contract using `npx ts-node deploy.ts`. Keep a track of the address.
 
-You can run any of the files using `npx ts-node <filename>`, for example `npx ts-node main.ts`.
+Use the address in `add.ts` and interact with the contract using `npx ts-node add.ts`.
